@@ -1,0 +1,4 @@
+Welcome to _avar.rocks_! The goal of this website is to serve as a resource for those wanting to learn about the Avar language, as well as a mirror for materials that may be lost due to link rot or websites going off line. _avar.rocks_ is [open source](https://github.com/parryc/avar_rocks), so comments, questions, suggestions, and improvements are welcome. Feel free to add a comment on the GitHub page, or send me an email at **hello** [@] **avar.rocks**. If you speak Avar and are interested in tutoring, I am also looking for a tutor – please get in contact and the email above!
+
+**_Recent updates_**
+* **2020-12-15**: Publish the site! Still a lot to do. :)

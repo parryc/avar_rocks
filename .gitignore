@@ -1,0 +1,5 @@
+av-en translator/deepl_key
+venv
+.idea
+.DS_Store
+__pycache__

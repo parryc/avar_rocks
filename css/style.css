@@ -1,0 +1,347 @@
+@font-face {
+    font-family: 'Averta';
+    src: url('Averta/AvertaDemoPE-Regular.eot');
+    src: local('Averta Regular'), url('Averta/AvertaDemoPE-Regular.eot?#iefix') format('embedded-opentype'),
+    url('Averta/AvertaDemoPE-Regular.woff') format('woff'),
+    url('Averta/AvertaDemoPE-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Averta';
+    font-style: italic;
+    font-weight: bold;
+    src: url('Averta/AvertaDemoPE-ExtraboldItalic.eot');
+    src: local('Averta Extrabold Italic'), url('Averta/AvertaDemoPE-ExtraboldItalic.eot?#iefix') format('embedded-opentype'),
+    url('Averta/AvertaDemoPE-ExtraboldItalic.woff') format('woff'),
+    url('Averta/AvertaDemoPE-ExtraboldItalic.ttf') format('truetype');
+}
+
+html, body {
+    font-family: "Averta";
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    margin: 0 0;
+    background: rgb(255, 246, 209);
+    color: #474747;
+    font-size: 20px;
+    box-shadow: inset 0 0 40px 20px rgba(214, 184, 142, 1);
+}
+
+main {
+    /*display: flex;*/
+    /*flex-flow: column;*/
+    height: 100%;
+    overflow: scroll;
+}
+
+/*main {*/
+/*    display: flex;*/
+/*    flex-flow: column;*/
+/*    height: 100%;*/
+/*    overflow: scroll;*/
+/*}*/
+
+cite {
+  vertical-align: super;
+  font-size: .6em;
+}
+
+code {
+    font-family: "Averta";
+    font-style: italic;
+    font-weight: bold;
+}
+
+abbr {
+    font-variant: small-caps;
+    font-variant-numeric: oldstyle-nums;
+    font-size: 0.8em;
+}
+
+h1, h2, h3, h4 {
+    padding: 12px 24px;
+}
+
+h1 {
+    font-size: 2.25em;
+    background: #e89191;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.125em;
+}
+
+nav {
+    display: grid;
+    /*grid-template-columns: 20% 20% 20% 20% 20%;*/
+    grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%;
+    padding: 5px;
+    font-size: 1.25em;
+    margin-left: -24px;
+}
+
+nav > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+nav > div > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav > div > a:after {
+    content: '';
+}
+
+nav > div > a:hover, a {
+    color: #6F92A8;
+    text-decoration: underline;
+}
+
+a:after {
+    content: '➚';
+}
+
+p, ul, ol, dl, .example-wrapper {
+    padding: 0 3em;
+    width: 61.8%;
+    line-height: 1.375em;
+}
+
+table {
+    min-width: 0;
+    margin-left: 3em;
+    margin-right: 3em;
+    border-collapse: collapse;
+    border-spacing: 0;
+    /*white-space: nowrap;*/
+}
+
+thead {
+    border: #474747 solid 3px;
+}
+
+th, td {
+    padding: 0.5em;
+    text-align: center;
+    vertical-align: central;
+}
+
+th {
+    background-color: rgba(214, 184, 142, 1);
+}
+
+td {
+    border: #474747 solid 3px;
+}
+
+tr {
+    page-break-inside: avoid !important;
+}
+
+#icon-mountain {
+    height: 200px;
+    margin: 5em auto 0;
+    width: 100%;
+}
+
+.banner {
+    font-size: 4em;
+    margin-bottom: 0.25em;
+}
+
+.toc a:after {
+    content: '' !important;
+}
+
+video {
+    width: 40%;
+    display: block;
+    margin: 1em auto 1em;
+}
+
+#translation-section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow-y: scroll;
+    height: 50%;
+}
+
+#translation-section > p {
+    white-space: pre-line;
+}
+
+#translation-section > hr {
+    border: 1px solid #474747;
+    width: 50%;
+    margin-left: 1.5em;
+}
+
+*[lang='ru'], .ru-trans {
+    color: #535353;
+}
+
+*[lang='ru']:before {
+    content: '(ru)';
+    padding-right: 0.3em;
+}
+
+.translation-note {
+    font-style: italic;
+}
+
+.translation-note:before {
+    content: '☛';
+    padding-right: 0.3em;
+}
+
+.translation-header {
+    font-size: 1.4em;
+    text-decoration: underline;
+    text-align: center;
+}
+
+@media (max-width: 860px) {
+    .banner {
+        font-size: 3.5em;
+        margin-bottom: 0em;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        border-bottom: 1px solid #474747;
+        margin-left: 0px;
+    }
+
+    nav > div {
+        height: 2.5em;
+    }
+
+    table {
+        overflow-x: scroll;
+        max-width: inherit !important;
+        display: block;
+    }
+
+    p {
+        width: inherit;
+        padding: 0 24px;
+    }
+
+    video {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/************
+Examples
+************/
+
+/* https://siongui.github.io/2017/02/27/css-only-toggle-dom-element/ */
+label {
+    cursor: pointer;
+}
+
+#example-toggle-1, #example-toggle-1:not(:checked) ~ .example-block,
+#example-toggle-2, #example-toggle-2:not(:checked) ~ .example-block,
+#example-toggle-3, #example-toggle-3:not(:checked) ~ .example-block,
+#example-toggle-4, #example-toggle-4:not(:checked) ~ .example-block,
+#example-toggle-5, #example-toggle-5:not(:checked) ~ .example-block,
+#example-toggle-6, #example-toggle-6:not(:checked) ~ .example-block,
+#example-toggle-7, #example-toggle-7:not(:checked) ~ .example-block,
+#example-toggle-8, #example-toggle-8:not(:checked) ~ .example-block,
+#example-toggle-9, #example-toggle-9:not(:checked) ~ .example-block,
+#example-toggle-10, #example-toggle-10:not(:checked) ~ .example-block,
+#example-toggle-11, #example-toggle-11:not(:checked) ~ .example-block,
+#example-toggle-12, #example-toggle-12:not(:checked) ~ .example-block,
+#example-toggle-13, #example-toggle-13:not(:checked) ~ .example-block,
+#example-toggle-14, #example-toggle-14:not(:checked) ~ .example-block,
+#example-toggle-15, #example-toggle-15:not(:checked) ~ .example-block,
+#example-toggle-16, #example-toggle-16:not(:checked) ~ .example-block,
+#example-toggle-17, #example-toggle-17:not(:checked) ~ .example-block,
+#example-toggle-18, #example-toggle-18:not(:checked) ~ .example-block,
+#example-toggle-19, #example-toggle-19:not(:checked) ~ .example-block,
+#example-toggle-20, #example-toggle-20:not(:checked) ~ .example-block {
+    display: none;
+}
+
+.example-wrapper {
+    margin-top: 1em;
+}
+
+.example-block {
+    margin-top: 1em;
+    border-left: .4rem dotted rgba(214, 184, 142, 1);
+}
+
+.example-header {
+    font-size: 0.6em;
+    padding: 5px 8px 5px 8px;
+    background: #444;
+    color: white;
+    border-radius: 15px;
+}
+
+.example-header:hover {
+    background: black;
+}
+
+.example-list {
+    margin-left: 1.6em;
+    list-style-type: upper-alpha;
+}
+
+.example-list li {
+    margin-top: 0.4em;
+}
+
+.example-note:before {
+    content: "⇾ ";
+}
+
+.example-note {
+    font-size: 0.7em;
+}
+
+.example-target {
+    font-style: italic;
+    font-size: 0.85em;
+}
+
+/*************
+Bracket Table
+*************/
+
+.bracket_table tbody tr td {
+    border: none !important;
+}
+
+.bracket_table td {
+    padding: 0rem 1.6rem;
+}
+
+.bracket_table .bracket {
+    margin-right: -60px;
+    margin-left: -20px;
+    margin-top: -15px;
+    display: block;
+}
+
+.bracket_table .bracket_text {
+    margin-left: -40px;
+    display: block;
+    /* should probably switch the
+       Python code to make it a div */
+}

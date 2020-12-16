@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>avar.rocks</title>
+    <link rel="shortcut icon" href="{{ url_for('.favicon') }}">
+    <link rel="stylesheet" href="css/style.css"/>
+    {% assets "css_lib" %}
+        <!--<link rel="stylesheet" href="{{ ASSET_URL }}" />-->
+    {% endassets %}
+</head>
+<body>
+    <main>
+        <h1 class="banner">{{banner}}</h1>
+        <nav>
+            <div><a href="/">home</a></div>
+            <div><a href="/grammar">grammar</a></div>
+            <div><a href="/resources">resources</a></div>
+            <div><a href="/textbook">video textbook</a></div>
+            <div><a href="/phrasebook">phrasebook</a></div>
+            <div><a href="/projects">projects</a></div>
+        </nav>
+        {{html|safe}}
+        <object id="icon-mountain" data="images/logo.svg" type="image/svg+xml"></object>
+    </main>
+</body>
+</html>
